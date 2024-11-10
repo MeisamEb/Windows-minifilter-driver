@@ -16,7 +16,7 @@ This driver has been tested on Windows 10 operating system.
 
 # Link video
 
-- [youtube](#https://www.youtube.com/@0xDecoder69)
+- [youtube](https://www.youtube.com/@0xDecoder69)
 
 
 
