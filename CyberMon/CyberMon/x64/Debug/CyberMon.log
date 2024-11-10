@@ -1,0 +1,22 @@
+﻿  Building 'CyberMon' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Debug\CyberMon.inf
+  Stamping [Version] section with DriverVer=07/24/2024,9.16.8.303
+  CyberMon.c
+  CyberMon.vcxproj -> C:\Users\0xDebugger\source\repos\CyberMon\x64\Debug\CyberMon.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\0xDebugger\source\repos\CyberMon\x64\Debug\CyberMon.sys
+  
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\0xDebugger\source\repos\CyberMon\x64\Debug\CyberMon\cybermon.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\0xDebugger\source\repos\CyberMon\x64\Debug\CyberMon\cybermon.cat
+  

@@ -1,0 +1,26 @@
+﻿  Building 'CyberMon' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Release\CyberMon.inf
+  Stamping [Version] section with DriverVer=08/17/2024,22.44.16.557
+  Device.c
+C:\Users\0xPandemic\source\repos\CyberMon\CyberMon\Device.c(36,41): warning C4100: 'DeviceObject': unreferenced formal parameter
+  Driver.c
+  MiniFilter.c
+  Generating Code...
+  CyberMon.vcxproj -> C:\Users\0xPandemic\source\repos\CyberMon\x64\Release\CyberMon.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\0xPandemic\source\repos\CyberMon\x64\Release\CyberMon.sys
+  
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\0xPandemic\source\repos\CyberMon\x64\Release\CyberMon\cybermon.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\0xPandemic\source\repos\CyberMon\x64\Release\CyberMon\cybermon.cat
+  

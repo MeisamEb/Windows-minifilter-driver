@@ -1,0 +1,11 @@
+#ifndef MINIFILTER_H
+#define MINIFILTER_H
+
+#include "Driver.h"
+
+NTSTATUS MiniFilterUnload(FLT_FILTER_UNLOAD_FLAGS Flags);
+FLT_PREOP_CALLBACK_STATUS MiniFilterPreOperation(PFLT_CALLBACK_DATA Data, PCFLT_RELATED_OBJECTS FltObjects, PVOID* CompletionContext);
+NTSTATUS InstanceSetup(PCFLT_RELATED_OBJECTS FltObjects, FLT_INSTANCE_SETUP_FLAGS Flags, DEVICE_TYPE VolumeDeviceType, FLT_FILESYSTEM_TYPE VolumeFilesystemType);
+NTSYSAPI PCHAR NTAPI PsGetProcessImageFileName(PEPROCESS Process);
+
+#endif // MINIFILTER_H

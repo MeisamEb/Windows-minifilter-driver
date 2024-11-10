@@ -1,0 +1,53 @@
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ProviderName%
+DriverVer=07/01/2021,1.0.0.0
+CatalogFile=CyberMon.cat
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12  ; dirid 12 = %SystemRoot%\system32\drivers
+
+[DefaultInstall.NT]
+CopyFiles = @CyberMon.sys
+AddReg = CyberMon_AddReg
+
+[DefaultUninstall.NT]
+DelFiles = @CyberMon.sys
+DelReg = CyberMon_DelReg
+
+[DefaultInstall.NT.Services]
+AddService = %FilterServiceName%,0x00000002,Service_Inst
+
+[DefaultUninstall.NT.Services]
+DelService = %FilterServiceName%,0x200
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+CyberMon.sys = 1,,
+
+[Service_Inst]
+DisplayName    = %FilterServiceName%
+ServiceType    = 1 ; SERVICE_KERNEL_DRIVER
+StartType      = 3 ; SERVICE_DEMAND_START
+ErrorControl   = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\CyberMon.sys
+LoadOrderGroup = "FSFilter Activity Monitor"
+
+[CyberMon_AddReg]
+HKLM,System\CurrentControlSet\Services\%FilterServiceName%,Type,0x00010001,1
+HKLM,System\CurrentControlSet\Services\%FilterServiceName%,Start,0x00010001,3
+HKLM,System\CurrentControlSet\Services\%FilterServiceName%,ErrorControl,0x00010001,1
+HKLM,System\CurrentControlSet\Services\%FilterServiceName%,ImagePath,0x00020000,"System32\drivers\CyberMon.sys"
+
+[CyberMon_DelReg]
+HKLM,System\CurrentControlSet\Services\%FilterServiceName%
+
+[Strings]
+ProviderName="YourProviderName"
+FilterServiceName="CyberMon"
+DiskId1="CyberMon Installation Disk"
