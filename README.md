@@ -10,9 +10,9 @@ This driver has been tested on Windows 10 operating system.
 
 # Images of video parts
 
-![User Mode](C:/Users/0xPandemic/Pictures/Screenshots/1.png)
+![pic_1](pic/1.png)
 
-![User Mode](C:/Users/0xPandemic/Pictures/Screenshots/2.png)
+![pic_2](pic/2.png)
 
 # Link video
 
